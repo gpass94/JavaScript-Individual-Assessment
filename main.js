@@ -3,25 +3,25 @@
 // 1.
 // What does `givenName` equal right now?
 var givenName;
-// A:
+// A: it is undefined
 
 
 // 2.
 // What is `givenName` set to right now?
 givenName = "Tim";
-// A:
+// A: it is set to Tim which is a string
 
 
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A:
+// A: it is set to null
 
 
 // 4.
 // What is `greeting` set to?
 var greeting = "Hello, how are you? " + givenName;
-// A:
+// A:the greeting is set to Hello, how are you Tim? or String +String
 
 
 // 5.
@@ -29,13 +29,13 @@ var greeting = "Hello, how are you? " + givenName;
 var high = 50;
 var low  = 10;
 var math = high - low;
-// A:
+// A:40
 
 
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A:
+// A:45
 
 
 // 7.
@@ -44,19 +44,20 @@ math = high - "5";
 // The answer shoud not be written in a comment.
 var born = 1984;
 var today = 2017;
+var age= today - born;
 // A:
 
 
 // 8.
 // Adjust this code. Store some information in the following variables.
 // A:
-var yourName;
-var instructorName;
+var yourName= "Grant Paschal"
+var instructorName ="Issac Hardy"
 
 
 // 9.
 // Update the variables `yourName` and `instructorName` so the expression below reads correctly.
-// A:
+// A:Grant Paschal is taking a class at The IronYard, my instructor's name is Issac Hardy
 
 
 // This statement should read correctly
@@ -66,9 +67,9 @@ var statement = yourName + " is taking a class at The Iron Yard, my instructor's
 // 10.
 // We've created a variable named after each primitive type.
 // Use the `=` operator to assign a value to each variable matching the type in the name.
-var myNumber;
-var myString;
-var myBoolean;
+var myNumber=21;
+var myString="Strings are fun";
+var myBoolean= false;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
 var myUndefined;
 // A:
@@ -78,47 +79,47 @@ var myUndefined;
 
 // 11.
 var x = (false == 0);
-// A.
+// A.true
 
 
 // 12.
 var y = (false == "");
-// A.
+// A.true
 
 
 // 13.
 var z = (0 == "");
-// A.
+// A.true
 
 
 // 14.
 var a = (null == null);
-// A.
+// A.true
 
 
 // 25.
 var b = (undefined == undefined);
-// A.
+// A.true
 
 
 // 16.
 var c = (undefined == null);
-// A.
+// A.true
 
 
 // 17.
 var d = (null == false);
-// A.
+// A.false
 
 
 // 18.
 var e = (NaN == null);
-// A.
+// A.false
 
 
 // 19.
 var f = (NaN == NaN);
-// A.
+// A.false
 
 
 // 20.
@@ -127,7 +128,9 @@ var f = (NaN == NaN);
 // A:
 var thirsty = true;
 
-{
+{if (thirsty) {
+
+}
   console.log("I'm parched!");
 } else {
   console.log("I've had enough to drink.");
@@ -143,7 +146,7 @@ if(x){
 } else {
 	console.log("False!");
 }
-// A:
+// A:false
 
 
 // 22.
@@ -152,7 +155,7 @@ if(""){
 } else {
 	console.log("False!");
 }
-// A:
+// A:false
 
 
 // 23.
@@ -164,7 +167,7 @@ if(x){
 } else {
 	console.log("False!");
 }
-// A:
+// A:False
 
 
 // 24.
@@ -173,7 +176,7 @@ if(false){
 } else {
 	console.log("False!");
 }
-// A:
+// A:false
 
 
 // 25.
@@ -182,7 +185,7 @@ if(-5 && 5){
 } else {
 	console.log("False!");
 }
-// A:
+// A:true
 
 
 // 26.
@@ -191,7 +194,7 @@ if("Hello World!"){
 } else {
 	console.log("False!");
 }
-// A:
+// A:true
 
 
 // 27.
@@ -200,7 +203,7 @@ if({}){
 } else {
 	console.log("False!");
 }
-// A:
+// A:true
 
 
 // 28.
@@ -209,7 +212,7 @@ if({name: "Yehuda Katz"}){
 } else {
 	console.log("False!");
 }
-// A:
+// A:true
 
 
 // 29.
@@ -218,7 +221,7 @@ if(new Date()){
 } else {
 	console.log("False!");
 }
-// A:
+// A:true
 
 
 // 30.
